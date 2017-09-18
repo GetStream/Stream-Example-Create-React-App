@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import $ from 'jquery';
+
 class App extends Component {
+  componentDidMount () {
+    $(document).foundation();
+  }
   render() {
     return (
       <div className="App">
@@ -13,6 +18,21 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <div className="grid-container text-center">
+          <div className="callout">
+            <ul id="dropdown-menu" className="dropdown menu" data-dropdown-menu>
+              <li>
+                <a>Dropdown for links</a>
+                <ul className="menu">
+                  <li><a href="https://facebook.github.io/react/" target="_blank" rel="noopener noreferrer">React</a></li>
+                  <li><a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="noopener noreferrer">create-react-app</a></li>
+                  <li><a href="https://foundation.zurb.com/" target="_blank" rel="noopener noreferrer">Foundation</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }

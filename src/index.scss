@@ -1,0 +1,14 @@
+@import "node_modules/foundation-sites/scss/foundation";
+
+// Foundation variables
+@import "./_foundation.settings";
+
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-everything;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
