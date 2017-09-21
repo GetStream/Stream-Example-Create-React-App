@@ -4,6 +4,8 @@ import './App.css';
 
 import $ from 'jquery';
 
+import FeedActivityList from './components/FeedActivityList/FeedActivityList';
+
 class App extends Component {
   componentDidMount () {
     $(document).foundation();
@@ -31,6 +33,9 @@ class App extends Component {
                 </ul>
               </li>
             </ul>
+          </div>
+          <div className="callout">
+            <FeedActivityList></FeedActivityList>
           </div>
         </div>
       </div>
