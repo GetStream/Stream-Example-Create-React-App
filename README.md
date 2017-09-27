@@ -1,6 +1,6 @@
-# stream-example-create-react
+# Stream-Example-Create-React-App
 
-> An example Social Todo List app built with react-create-app (RCA)
+> An example app built with react-create-app (RCA)
 
 ## Project setup
 
