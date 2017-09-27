@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './FeedActivityList.css';
-import ActivityCard from '../ActivityCard/ActivityCard';
+import FeedActivity from '../FeedActivity/FeedActivity';
 
 import * as stream from 'getstream';
 
@@ -17,14 +17,14 @@ class FeedActivityList extends Component {
     this.activities = [];
 
     var client = stream.connect(
-      process.env.REACT_APP_STREAM_APP_TOKEN,
+      process.env.REACT_APP_STREAM_APP_KEY,
       null,
       process.env.REACT_APP_STREAM_APP_ID
     );
     var feed = client.feed(
       process.env.REACT_APP_STREAM_FEED_GROUP,
       process.env.REACT_APP_STREAM_FEED_ID,
-      process.env.REACT_APP_STREAM_FEED_TOKEN
+      process.env.REACT_APP_STREAM_FEED_READ_ONLY_TOKEN
     );
     feed.get().then(response => {
       this.setState({ activities: response['results'] });
@@ -37,10 +37,10 @@ class FeedActivityList extends Component {
         <div>
           <ul>
             {this.state.activities.map(activity =>
-              <ActivityCard
+              <FeedActivity
                 key={activity.id}
                 activity={activity}>
-              </ActivityCard>
+              </FeedActivity>
             )}
           </ul>
         </div>

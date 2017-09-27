@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ActivityCard from './ActivityCard';
+import FeedActivity from './FeedActivity';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -10,5 +10,5 @@ it('renders without crashing', () => {
     verb: 'message',
     object: 'the object'
   };
-  ReactDOM.render(<ActivityCard key={activity.id} activity={activity} />, div);
+  ReactDOM.render(<FeedActivity key={activity.id} activity={activity} />, div);
 });
