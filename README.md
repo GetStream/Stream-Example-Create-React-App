@@ -14,6 +14,11 @@ Note: Paths below are relative to the root project directory.
     yarn
     ```
 
+2. Transpile styles to css:
+    ``` bash
+    yarn build-css
+    ```
+
 ### 1. Run the Website
 1. Run the following shell command:
     ``` bash
