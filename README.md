@@ -2,7 +2,7 @@
 
 > An example app built with react-create-app (RCA)
 
-The project is pre-configured with a shared Stream account for testing purposes. You can sign up for an account and obtain your own App Id and Key at https://getstream.io/get_started.
+The project is pre-configured with a shared [Stream](https://getstream.io) account for testing purposes. You can learn more about Stream feeds, sign up for an account, and obtain your own App Id and Key at https://getstream.io/get_started.
 
 ## Project setup
 
@@ -28,7 +28,7 @@ Note: Paths below are relative to the root project directory.
     ```
 
 ### 2. Win.
-1. Browse to `http://localhost:8080`.
+1. Browse to `http://localhost:3000`.
 
 ## Working with createp-react-app
 
