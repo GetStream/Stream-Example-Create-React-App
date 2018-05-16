@@ -2,6 +2,8 @@
 
 > An example app built with react-create-app (RCA)
 
+This is very basic example is intended to accompany the [JavaScript Frontend Framework CLI Showdown](https://getstream.io/blog/javascript-framework-cli-showdown/) post on the Stream blog. For a more thorough React example, see the [stream-example-react](https://github.com/GetStream/stream-react-example) project.
+
 The project is pre-configured with a shared [Stream](https://getstream.io) account for testing purposes. You can learn more about Stream feeds, sign up for an account, and obtain your own App Id and Key at https://getstream.io/get_started.
 
 ## Project setup
