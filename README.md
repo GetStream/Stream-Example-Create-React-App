@@ -1,3 +1,5 @@
+> **This repository is archived and will be deleted.** It is no longer maintained. For a current alternative, see [the Feeds v3 JavaScript docs](https://getstream.io/activity-feeds/docs/javascript/).
+
 # Stream-Example-Create-React-App
 
 > An example app built with react-create-app (RCA)
